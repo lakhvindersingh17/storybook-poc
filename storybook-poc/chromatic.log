@@ -1,0 +1,11 @@
+
+Chromatic CLI v9.0.0
+https://www.chromatic.com/docs/cli
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+Authenticated with Chromatic
+    → Using project token '****************f49d'
+Retrieving git information
+    → Command failed with exit code 1: git --no-pager log -n 1 --format="%H ## %ct ## %ae ## %an"
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
