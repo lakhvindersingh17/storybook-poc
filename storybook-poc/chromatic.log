@@ -5,7 +5,116 @@ https://www.chromatic.com/docs/cli
 Authenticating with Chromatic
     → Connecting to https://index.chromatic.com
 Authenticated with Chromatic
-    → Using project token '****************f49d'
+    → Using project token '****************2254'
 Retrieving git information
-    → Command failed with exit code 1: git --no-pager log -n 1 --format="%H ## %ct ## %ae ## %an"
-xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+✖ Found only one commit
+This typically means you have ran into one of the following scenarios:
+- You've checked out a shallow copy of the Git repository, which some CI systems do by default.
+  In order for Chromatic to correctly determine baseline commits, we need access to the full Git history graph.
+  Refer to your CI provider's documentation for details.
+- You've only made a single commit so far.  
+  Please make at least one additional commit in order for Chromatic to be able to detect what's changed.
+Retrieved git information
+    → Commit '3843154' on branch 'master'; no ancestor found
+Collecting Storybook metadata
+Collected Storybook metadata
+    → Storybook 7.5.3 for React; using the @storybook/react-webpack5 builder (7.5.3); supported addons found: Links, Essentials, Interactions
+Initializing build
+Initialized build
+    → Build 4 initialized
+Building your Storybook
+    → Running command: npm run build-storybook -- --output-dir /var/folders/7t/mb_8s93d0jl79xq18n5hk8gm0000gn/T/chromatic--68451-NAQLeMMmCYyP
+Storybook built in 11 seconds
+    → View build log at /Users/lakhvindersingh/Documents/Projects/storybook-poc/storybook-poc/build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 1%
+    → [==                  ] 10%
+    → [==                  ] 12%
+    → [===                 ] 15%
+    → [====                ] 19%
+    → [====                ] 21%
+    → [=====               ] 24%
+    → [======              ] 31%
+    → [=======             ] 33%
+    → [=======             ] 35%
+    → [=======             ] 36%
+    → [=======             ] 37%
+    → [========            ] 39%
+    → [========            ] 40%
+    → [========            ] 41%
+    → [========            ] 42%
+    → [=========           ] 43%
+    → [=========           ] 44%
+    → [=========           ] 45%
+    → [=========           ] 46%
+    → [=========           ] 47%
+    → [==========          ] 48%
+    → [==========          ] 49%
+    → [==========          ] 51%
+    → [==========          ] 52%
+    → [===========         ] 53%
+    → [===========         ] 54%
+    → [===========         ] 55%
+    → [===========         ] 56%
+    → [===========         ] 57%
+    → [============        ] 58%
+    → [============        ] 59%
+    → [============        ] 60%
+    → [============        ] 62%
+    → [=============       ] 63%
+    → [=============       ] 66%
+    → [==============      ] 68%
+    → [==============      ] 70%
+    → [==============      ] 71%
+    → [==============      ] 72%
+    → [===============     ] 73%
+    → [===============     ] 75%
+    → [===============     ] 76%
+    → [===============     ] 77%
+    → [================    ] 80%
+    → [================    ] 81%
+    → [================    ] 82%
+    → [=================   ] 83%
+    → [=================   ] 84%
+    → [=================   ] 85%
+    → [==================  ] 88%
+    → [==================  ] 89%
+    → [==================  ] 90%
+    → [==================  ] 92%
+    → [=================== ] 94%
+    → [=================== ] 95%
+    → [=================== ] 96%
+    → [=================== ] 97%
+    → [====================] 98%
+    → [====================] 99%
+    → [====================] 100%
+Publish complete in 41 seconds
+    → View your Storybook at https://6554b105efb6140ca4ee6f8e-oqoqxfgfrs.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 4
+    → View build details at https://www.chromatic.com/build?appId=6554b105efb6140ca4ee6f8e&number=4
+Running 8 tests
+    → This may take a few minutes
+ℹ Speed up Continuous Integration
+Your project is linked to GitHub so Chromatic will report results there.
+This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+    → [===                 ] 1/8  Button › Primary 
+    → [========            ] 3/8  Button › Large 
+    → [=============       ] 5/8  Header › Logged In 
+    → [==================  ] 7/8  Page › Logged Out 
+    → [====================] 8/8  Page › Logged In 
+✖ Found 8 visual changes: Review the changes at https://www.chromatic.com/build?appId=6554b105efb6140ca4ee6f8e&number=4
+
+ℹ For CI/CD use cases, this command failed with exit code 1
+Pass --exit-zero-on-changes to succeed this command regardless of changes.
+Pass --auto-accept-changes to succeed and automatically accept any changes.
+Build 4 completed
+    → Tested 8 stories across 3 components; captured 8 snapshots in 14 seconds
+
+
